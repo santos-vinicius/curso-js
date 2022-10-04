@@ -21,6 +21,8 @@ function esperaAi(msg, tempo) {
   });
 }
 
+// ---------------------------------------- //
+
 function baixaPagina() {
   const emCache = true;
   if (emCache) {
@@ -29,6 +31,13 @@ function baixaPagina() {
     return esperaAi('Baixei a página', 2000);
   }
 }
+
+baixaPagina()
+  .then(dadosPagina => {
+    console.log(dadosPagina);
+  })
+  .catch(e => console.log('ERRO', e));
+
 // ---------------------------------------- //
 
 const promises = [
