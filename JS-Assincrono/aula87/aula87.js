@@ -20,6 +20,15 @@ function esperaAi(msg, tempo) {
     }, tempo);
   });
 }
+
+function baixaPagina() {
+  const emCache = true;
+  if (emCache) {
+    return Promise.resolve('Página em cache.');
+  } else {
+    return esperaAi('Baixei a página', 2000);
+  }
+}
 // ---------------------------------------- //
 
 const promises = [
