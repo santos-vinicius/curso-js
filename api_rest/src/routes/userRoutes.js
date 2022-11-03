@@ -6,7 +6,7 @@ const router = new Router();
 
 // Não deveria existir
 
-// router.get('/', loginRequired, userController.index); // Lista usuários
+router.get('/', loginRequired, userController.index); // Lista usuários
 // router.get('/:id', userController.show); // Lista usuário.
 
 //
