@@ -1,30 +1,34 @@
-/** @type {import('sequelize-cli').Migration} */
-
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.createTable('fotos', {
+  up: (queryInterface, Sequelize) => queryInterface.createTable('alunos', {
     id: {
       type: Sequelize.INTEGER,
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
     },
-    originalname: {
+    nome: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    filename: {
+    sobrenome: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    aluno_id: {
+    email: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    idade: {
       type: Sequelize.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'alunos',
-        key: 'id',
-      },
-      onDelete: 'SET NULL',
-      onUpdate: 'CASCADE',
+      allowNull: false,
+    },
+    peso: {
+      type: Sequelize.FLOAT,
+      allowNull: false,
+    },
+    altura: {
+      type: Sequelize.FLOAT,
+      allowNull: false,
     },
     created_at: {
       type: Sequelize.DATE,
@@ -35,5 +39,6 @@ module.exports = {
       allowNull: false,
     },
   }),
-  down: (queryInterface) => queryInterface.dropTable('fotos'),
+
+  down: (queryInterface) => queryInterface.dropTable('alunos'),
 };

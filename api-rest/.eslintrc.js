@@ -4,7 +4,8 @@ module.exports = {
     node: true,
   },
   extends: 'airbnb-base',
-  overrides: [],
+  overrides: [
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',

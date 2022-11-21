@@ -1,22 +1,21 @@
 {
-  "name": "api_rest",
+  "name": "api-rest-alunos",
   "version": "1.0.0",
-  "description": "",
+  "description": "api para estudos, criada durante o curso de javacript ministrado pelo professor luiz otávio miranda.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Vinicius Santos - santosvinicius.dev",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "nodemon": "^2.0.20",
     "sequelize-cli": "^6.5.2",
-    "sucrase": "^3.28.0"
+    "sucrase": "^3.29.0"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -25,6 +24,7 @@
     "jsonwebtoken": "^8.5.1",
     "mariadb": "^3.0.2",
     "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
     "sequelize": "^6.25.3"
   }
 }
