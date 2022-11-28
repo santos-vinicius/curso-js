@@ -13,7 +13,8 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
-  'http://34.151.245.16:81/'
+  'http://35.247.198.251:81/',
+  'http://localhost:3001/'
 ];
 
 const corsOptions = {
