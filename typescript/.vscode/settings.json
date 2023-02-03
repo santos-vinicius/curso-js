@@ -2,6 +2,6 @@
   "window.zoomLevel": -0.5,
   "code-runner.executorMap": {
     "javascript": "node",
-    "typescript": "cls && npx ts-node --files --transpile-only",
+    "typescript": "npx ts-node --files --transpile-only",
   },
 }
