@@ -4,7 +4,9 @@
   "description": "arquivos do curso de typescript do Otávio Miranda",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -w",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "santosvinicius.dev",
